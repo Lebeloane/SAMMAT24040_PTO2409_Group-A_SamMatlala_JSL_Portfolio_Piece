@@ -198,7 +198,7 @@ function setupEventListeners() {
 // Toggles tasks modal
 // Task: Fix bugs
 function toggleModal(show, modal = elements.modalWindow) {
-  modal.style.display = show ? 'block' : 'none'; // error => instead of : (else) tenary operator
+  modal.style.display = show ? 'block' : 'none'; // error => instead of : (else) ternary operator
 }
 
 /*************************************************************************************************************************************************
@@ -271,7 +271,7 @@ function openEditTaskModal(task) {
 
   // Delete task using a helper function and close the task modal
   deleteTaskBtn.onclick = () => {
-    // confirmation step before deleting the task , confirm funtion
+    // confirmation step before deleting the task , confirm function
     const confirmation = confirm("Are you sure you want to delete this task?");
     if (confirmation) {
       // Delete the task with the specified id
@@ -308,7 +308,7 @@ function saveTaskChanges(taskId) {
     id: taskDetails.id
   };
 
-  // Update task using a hlper functoin
+  // Update task using a helper function
   patchTask(taskId, updatedTask)
 
   // Close the modal and refresh the UI to reflect the changes
