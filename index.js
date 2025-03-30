@@ -210,7 +210,11 @@ function addTask(event) {
 
   //Assign user input to the task object
     const task = {
-      
+      title: document.getElementById('title-input').value,
+      description: document.getElementById('desc-input').value,
+      status: document.getElementById('select-status').value,
+      board: activeBoard,
+      id: new Date().getTime() 
     };
     const newTask = createNewTask(task);
     if (newTask) {
@@ -221,6 +225,7 @@ function addTask(event) {
       refreshTasksUI();
     }
 }
+
 
 
 function toggleSidebar(show) {
