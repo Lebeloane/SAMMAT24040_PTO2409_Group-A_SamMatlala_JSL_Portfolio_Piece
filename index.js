@@ -100,7 +100,7 @@ function filterAndDisplayTasksByBoard(boardName) {
       taskElement.setAttribute('data-task-id', task.id);
 
       // Listen for a click event on each task and open a modal
-      // error function click instead of eventlistener of click
+      // error function click instead of eventlistener of a click
       taskElement.addEventListener('click', () => { 
         openEditTaskModal(task);
       });
@@ -118,7 +118,7 @@ function refreshTasksUI() {
 // Styles the active board by adding an active class
 // TASK: Fix Bugs
 function styleActiveBoard(boardName) {
-  document.querySelectorAll('.board-btn').forEach(btn => { // error fixe foreach instead of forEach
+  document.querySelectorAll('.board-btn').forEach(btn => { // error fix foreach instead of forEach
     
     if(btn.textContent === boardName) {
       btn.classList.add('active') 
@@ -198,7 +198,7 @@ function setupEventListeners() {
 // Toggles tasks modal
 // Task: Fix bugs
 function toggleModal(show, modal = elements.modalWindow) {
-  modal.style.display = show ? 'block' : 'none'; // error => instead of : (else) ternary operator
+  modal.style.display = show ? 'block' : 'none'; // error => (arrow function) instead of : (else) ternary operator
 }
 
 /*************************************************************************************************************************************************
