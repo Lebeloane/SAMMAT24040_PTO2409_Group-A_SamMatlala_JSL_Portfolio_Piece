@@ -328,6 +328,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function init() {
+  /* addStyles(); */
   setupEventListeners();
   const showSidebar = localStorage.getItem('showSideBar') === 'true';
   toggleSidebar(showSidebar);
